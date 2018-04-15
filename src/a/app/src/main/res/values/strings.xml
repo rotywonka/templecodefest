@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">School Alarm</string>
+    <string channel_name="channel_name">channel</string>
+
+</resources>
