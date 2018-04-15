@@ -19,7 +19,7 @@ while True:
     }
     i = i + 0.00001
     s = json.dumps(dict)
-    with open("/Users/ianapplebaum/Desktop/json_files/json.txt", "w") as f:
+    with open("/home/pi/templecodefest/src/json.txt", "w") as f:
         f.write(s)
 
     placefile()
@@ -27,6 +27,6 @@ while True:
 
 def placefile():
 
-    filename = "/Users/ianapplebaum/Desktop/json_files/json.txt"
+    filename = "/home/pi/templecodefest/src/json.txt"
     ftp.storbinary('STOR '+filename, open(filename, 'rb'))
     ftp.quit()
